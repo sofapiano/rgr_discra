@@ -1,3 +1,6 @@
+from interface import init_gui, init_canvas, init_input
+
+
 def intersection():
 
     def find_intersection(sets):
@@ -24,3 +27,10 @@ def intersection():
         return "Пересечение множеств: пустое множество"
     else:
         return f"Пересечение множеств: {inter}"
+    
+
+if __name__ == '__main__':
+    root = init_gui()
+    canvas = init_canvas(root)
+    init_input(canvas)
+    root.mainloop()

@@ -37,10 +37,3 @@ def init_input(canvas):
     btn_generate = tk.Button(canvas, text='ввести множества', font=("Roboto", 12), command=lambda: display_key(canvas, intersection()))
     canvas.create_window(450, 280, window=btn_generate)
     canvas.create_window(450, 250, window=lbl_text)
-
-
-if __name__ == '__main__':
-    root = init_gui()
-    canvas = init_canvas(root)
-    init_input(canvas)
-    root.mainloop()
